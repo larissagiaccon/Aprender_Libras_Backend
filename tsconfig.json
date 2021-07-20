@@ -1,0 +1,95 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@config/*":                              ["config/*"],
+      "@modules/*":                             ["modules/*"],
+      "@database/*":                            ["shared/infra/*"],
+      "@errors/*":                              ["shared/errors/*"],
+      "@container/*":                           ["shared/container/*"],
+      "@providers/*":                           ["shared/container/providers/*"],
+      "@middlewares/*":                         ["shared/infra/http/middlewares/*"],
+
+      "@fakesCacheProvider/*":                  ["shared/container/providers/CacheProvider/fakes/*"],
+      "@modelsCacheProvider/*":                 ["shared/container/providers/CacheProvider/models/*"],
+      "@allCacheProvider/*":                    ["shared/container/providers/CacheProvider/implementations/*"],
+
+      "@fakesStorageProvider/*":                ["shared/container/providers/StorageProvider/fakes/*"],
+      "@modelsStorageProvider/*":               ["shared/container/providers/StorageProvider/models/*"],
+      "@allStorageProvider/*":                  ["shared/container/providers/StorageProvider/implementations/*"],
+
+      "@dtosMailProvider/*":                    ["shared/container/providers/MailProvider/dtos/*"],
+      "@fakesMailProvider/*":                   ["shared/container/providers/MailProvider/fakes/*"],
+      "@modelsMailProvider/*":                  ["shared/container/providers/MailProvider/models/*"],
+      "@allMailProvider/*":                     ["shared/container/providers/MailProvider/implementations/*"],
+
+      "@dtosMailTemplateProvider/*":            ["shared/container/providers/MailTemplateProvider/dtos/*"],
+      "@fakesMailTemplateProvider/*":           ["shared/container/providers/MailTemplateProvider/fakes/*"],
+      "@modelsMailTemplateProvider/*":          ["shared/container/providers/MailTemplateProvider/models/*"],
+      "@allMailTemplateProvider/*":             ["shared/container/providers/MailTemplateProvider/implementations/*"],
+
+      "@dtosConnections/*":                     ["modules/connections/dtos/*"],
+      "@servicesConnections/*":                 ["modules/connections/services/*"],
+      "@interfaceRepositoriesConnections/*":    ["modules/connections/repositories/*"],
+      "@fakesRepositoriesConnections/*":        ["modules/connections/repositories/fakes/*"],
+      "@entitiesConnections/*":                 ["modules/connections/infra/typeorm/entities/*"],
+      "@repositoriesConnections/*":             ["modules/connections/infra/typeorm/repositories/*"],
+
+      "@dtosMessages/*":                        ["modules/messages/dtos/*"],
+      "@servicesMessages/*":                    ["modules/messages/services/*"],
+      "@interfaceRepositoriesMessages/*":       ["modules/messages/repositories/*"],
+      "@routesMessages/*":                      ["modules/messages/infra/http/routes/*"],
+      "@fakesRepositoriesMessages/*":           ["modules/messages/repositories/fakes/*"],
+      "@entitiesMessages/*":                    ["modules/messages/infra/typeorm/entities/*"],
+      "@controllersMessages/*":                 ["modules/messages/infra/http/controllers/*"],
+      "@repositoriesMessages/*":                ["modules/messages/infra/typeorm/repositories/*"],
+
+      "@dtosNotifications/*":                   ["modules/notifications/dtos/*"],
+      "@servicesNotifications/*":               ["modules/notifications/services/*"],
+      "@interfaceRepositoriesNotifications/*":  ["modules/notifications/repositories/*"],
+      "@fakesRepositoriesNotifications/*":      ["modules/notifications/repositories/fakes/*"],
+      "@schemasNotifications/*":                ["modules/notifications/infra/typeorm/schemas/*"],
+      "@repositoriesNotifications/*":           ["modules/notifications/infra/typeorm/repositories/*"],
+
+      "@dtosAppointments/*":                    ["modules/appointments/dtos/*"],
+      "@servicesAppointments/*":                ["modules/appointments/services/*"],
+      "@interfaceRepositoriesAppointments/*":   ["modules/appointments/repositories/*"],
+      "@routesAppointments/*":                  ["modules/appointments/infra/http/routes/*"],
+      "@fakesRepositoriesAppointments/*":       ["modules/appointments/repositories/fakes/*"],
+      "@entitiesAppointments/*":                ["modules/appointments/infra/typeorm/entities/*"],
+      "@controllersAppointments/*":             ["modules/appointments/infra/http/controllers/*"],
+      "@repositoriesAppointments/*":            ["modules/appointments/infra/typeorm/repositories/*"],
+
+      "@dtosUsers/*":                           ["modules/users/dtos/*"],
+      "@servicesUsers/*":                       ["modules/users/services/*"],
+      "@interfaceRepositoriesUsers/*":          ["modules/users/repositories/*"],
+      "@routesUsers/*":                         ["modules/users/infra/http/routes/*"],
+      "@fakesRepositoriesUsers/*":              ["modules/users/repositories/fakes/*"],
+      "@entitiesUsers/*":                       ["modules/users/infra/typeorm/entities/*"],
+      "@middlewaresUsers/*":                    ["modules/users/infra/http/middlewares/*"],
+      "@controllersUsers/*":                    ["modules/users/infra/http/controllers/*"],
+      "@repositoriesUsers/*":                   ["modules/users/infra/typeorm/repositories/*"],
+      "@fakesHashProvidersUsers/*":             ["modules/users/providers/HashProvider/fakes/*"],
+      "@modelsHashProvidersUsers/*":            ["modules/users/providers/HashProvider/models/*"],
+      "@allHashProvidersUsers/*":               ["modules/users/providers/HashProvider/implementations/*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
